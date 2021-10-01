@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title> Week Plan: 10-01 </title>
+</head>
+<body>
+<h1> Gant and Jones's Week Plan for 2021-10-01: </h1>
+<h2> Class Sessions:</h2>
+    <h3> Monday- Introduction</h3>
+        <ol>
+            <li>Introduce Week Content and Assignment </li>
+            <li>Show an example of what is expected and the format to be followed </li>
+            <li>Give leadership groups their specific dates to format notes from</li>
+        </ol>
+    <h3> Wednesday- Work day </h3>
+        <ol>
+            <li>Opportunity to ask questions </li>
+            <li>Work with partner </li>
+
+        </ol>
+    <h3> Friday- Turn everything in </h3>
+        <ol>
+            <li>Have all work done</li>
+            <li>Pull requests organized</li>
+            <li>Post on website </li>
+        </ol>   
+
+<h2> The Assignment: </h2>
+    <p> Create a page that contains all the notes from each class session so if a class is missed or someone needs to refer </br> back to what is expected of them, all the information they need is in one place! </p>
+<br>
+<h2> Work Distribution (10-01 to 10-05): </h2>
+<ol>
+  <li>Edmonds/Tran- 8/25 and 8/30 </li>
+  <li>Beehler/thomas- 9/1, 9/3, 9/8 </li>
+  <li>Kime- 9/10, 9/13 </li>
+  <li>Shaffer/Chigwira- 9/15, 9/27, 9/29 </li>
+  <li>Gonnerman/Hillaker- 10/1, 10/4  </li>
+  <li>Callaghan/Nguyen- 10/6, 10/8  </li>
+</ol>
+<h2> Format for Class Notes:</h2>
+<pre>
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=en&gt;
+        &lt;head>
+        &lt;title&gt;Software Development Class Notes&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt; Software Development: Class Notes&lt;/h1&gt;
+        &lt;h2&gt;Date: 2021-00-00&lt;/h2&gt;
+             &lt;h4&gt; Topic: &lt;/h4&gt;
+                &lt;ol&gt; 
+                    &lt;li&gt; Important Information about a specific topic covered&lt;/li&gt;
+                &lt;/ol&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+    </code>
+</pre>
+<p> Notes: Please keep information added relevant, only add what you deam to be significant for the class to know. </br> Also, you can copy the code segment below as many times as needed to ensure you cover all topics discussed in class!</p>
+  <pre>
+     <code>
+        &lt;h4&gt; Topic: &lt;/h4&gt;
+                 &lt;ol&gt; 
+                     &lt;li&gt; Important Information about a specific topic covered&lt;/li&gt;
+                 &lt;/ol&gt; 
+    </code>
+  </pre>
+
+</body>
+</html>
