@@ -1,0 +1,115 @@
+<!Doctype html>
+<html lang = "en-us">
+
+<head>
+<meta charset = "UTF-8">
+<title>Software Development</title>
+</head>
+<body>
+	<h1>Software Development: Site Content Assignment - Craig Shaffer and Madeline Edmonds<h1>
+
+	<h2>Displaying Code Snippets: </h2>
+
+	<p>For our website, we want to be able to display code snippets in our blog posts. To do this you cannot simply just type the code and have it formatted nicely within the post automatically. Instead, you have to use &lt;code&gt; tags around the section of code you want to display. The tag will display the code within the tags as text, but ignore the formatting. This is because browsers ignore line breaks and multiple white spaces. To solve this issue, we can use &lt;pre&gt; tags around the &lt;code&gt; tags that are already around the code snippet. These tags will keep the formatting of the code snippet correct and looking nice. </p>
+  <br>
+  <h2> How to use the Tags: </h2>
+  
+  <p> How your code looks: </p>
+  <p> &lt;pre&gt; </p>
+  <p>     &lt;code&gt; </p>
+  <pre>
+    <code>
+      body {
+      background-color: red;
+      border-radius: 4px;
+      }
+    </code>
+  </pre>
+  <p>     &lt;/code&gt; </p> 
+  <p> &lt;/pre&gt; </p>
+  <br>
+	<p>How it is displayed: </p>
+  <pre>
+    <code>
+      body {
+      background-color: red;
+      border-radius: 4px;
+      }
+    </code>
+  </pre>
+  <br>
+  <h2>Syntax Highlighting with Prism.js: </h2>
+  <p>Sometimes when displaying long code snippets, they can be difficult to understand and read. By using syntax highlighting, it is possible to make the code snippets more readable for the viewer. We can do this easily by using a Javascript library to automatically highlight the code. Two commonly used syntax highlighters are Prism.js and Highlight.js. For the purpose of simplicity, we will focus on Prism.js but the process of using Highlight.js is very similar. </p>
+  <p>On the Prism website (prismjs.com), you can download the CSS and JS for Prism. They give you options on what languages and themes you plan on using. Once you have selected your options and configured Prism to your needs, download and add the files into your project folder. These files will be used to highlight the syntax of your snippet. </p>
+  <p>To use these files, you will need to include them in your site. Include the files as I have done below: </p>
+  <br>
+  <p> &lt;!DOCTYPE html&gt; </p>
+  <p> &lt;html&gt; </p>
+  <p> &lt;head&gt; </p>
+  <p>      ... </p>
+	<p>      &lt;link href="themes/prism.css" rel="stylesheet" /&gt; </p>
+  <p> &lt;/head&gt; </p>
+  <p> &lt;body&gt; </p>
+  <p>      ... </p>
+  <p>      &lt;script src="prism.js"&gt; &lt;/script&gt; </p>
+  <p> &lt;/body&gt; </p>
+  <p> &lt;/html&gt; </p>
+  <br>
+  <p>Prism only works and highlights syntax of items surrounded by &lt;code&gt; tags to encourage good authoring practices. In addition to the &lt;code&gt; tag, Prism recommends you define your code language within the code tag (see the example below). You also can add the &lt;pre&gt; tag from earlier to keep your formatting.</p>
+  <p>Example of defining class in the code tag:</p> 
+  <p>&lt;code class=“language-css”&gt;</p>
+  <p>&lt;/code”&gt;</p>
+  <br>
+  <p> Now you know how to download and use a syntax highlighter for code snippet implementation for the website. For more help installing or using the prism.js library, check out their website (prismjs.com). </p>
+  <br>
+  <h2>Manually Highlighting with CSS</h2>
+  <p>If you want to change the colors of your code you can do that with CSS. In between the &lt;code&gt; tags you can add a &lt;div&gt; tag with a class attribute that with CSS and the div tag will disappear in your code segments.</p> 
+  <p>For example:</p> 
+  <pre><code>
+      &lt;style&gt;
+
+      .changeColor { 
+
+         color: red; 
+
+      } 
+
+      &lt;/style&gt;
+
+      &lt;div class="changeColor"&gt;body&lt;/div&gt; { 
+
+         background-color: blue; 
+
+     } 
+    </code> 
+    </pre>  
+  <p>Will look like:</p> 
+  <pre><code> <div class="changeColor">body</div> { 
+
+     background-color: blue; 
+
+  } 
+  </code> 
+  </pre>
+  <br>
+  <h2>Time Logs</h2>
+  <ol>
+	  <p>  Craig Shaffer Log: </p>
+		<li>	2021-Sept-5: 4:00-5:30pm: Research formatting snippets</li>
+    		<li>	2021-Sept-5: 6:00-7:37pm: Write essay for formatting snippets</li>
+		<li>	2021-Sept-7: 6:03-8:22pm: Syntax Highlighting research and revise essay</li>
+		<li>	2021-Sept-9: 5:30-8:10pm: Create HTML file and add in essay</li>
+    		<li>	2021-Sept-9: 8:10-8:20pm: Create pull request</li>
+    
+  </ol> 
+  <ol>
+    	  <p>  Madeline Edmonds Log: </p>
+		<li>	2021-Sept-3: 8:00-9:00am: Assignment given</li>
+		<li>	2021-Sept-3: 3:00-4:00pm: Researched the &lt;code&gt; tag and it's functions. Found formatting was on one line so I found using the &lt;pre&gt; tags can keep the look and shape of the code snippets you've provided. Created HTML file and added it to GitHub </li>
+		<li>	2021-Sept-7: 9:00-10:00am: Updated HTML file with CSS styling. found how to change the whole code text a different color but not how to highlight specific text. </li>
+    		<li>	2021-Sept-8: 8:00-8:30am: Attended class, computer had troubles</li>
+    		<li>	2021-Sept-8: 10:00-10:50am: Found that using the &lt;div&gt; tags in the code tags and styling the &lt;div&gt; you can have specific words highlighted a separate color.</li>
+    		<li>	2021-Sept-9: 1:00-2:30pm: Create essay HTML page for Pull Requests. Push all files to GitHub. Prepare Pull Requests</li>
+  </ol>
+
+</body>

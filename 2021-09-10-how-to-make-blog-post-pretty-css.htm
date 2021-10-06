@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 
+		Danh Tran
+		Gideon Kime
+	-->	
+	<title>How to Make a Blog Post Pretty</title>
+<style>
+	.heading1 {
+		font-size : 32px;
+		font-weight : bold;
+	}
+	.heading3 {
+		font-size : 19px;
+		font-weight : bold;
+	}
+	.bold-text {
+		font-weight : bold;
+	}
+	.italicized-text {
+		font-style : italic;
+	}
+	body {
+		background-color: khaki;
+	}
+	.center {
+		text-align: center;
+	}
+	.right {
+		text-align: right;
+	}
+	.image {
+		width : 200px;
+		height: 200px;
+		float: right;
+		border-radius: 15px;
+		border: solid 5px blue;
+	}
+</style>
+</head>
+
+<body>
+<h3>Gideon Kime & Danh Tran</h3>
+<h1 class="center">Making Blogspot Pretty</h1>
+
+<h4>Change your font to a deliberate typographical style</h4>
+<p>
+Avoid ugly fonts that are difficult to read because the point of a blog is its content and, as such, we should make sure at least that looks good, paying attention to the size and style of the text to ensure that it is something readers enjoy and find easy to look at is important.
+</p>
+
+<p>
+To make a blog post pretty, we need to work on visual factors such as colors, figures, and layout of the post. HMTL has many different tags that can serve part of this purpose. It is similar to when you format the content of a document file, HTML can help decorate the text content with boldface or italic, format text as different headings, organize text into lists.
+</p>
+
+<br />
+<h4>Code snippet (HTML):</h4>
+<pre>
+&lt;h1&gt;Heading h1&lt;/h1&gt;
+&lt;h3&gt;Heading h3&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;A list example with a list of examples&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Bold-faced text&lt;/strong&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;em&gt;Italicized text&lt;/em&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bold-faced and italicized text&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<br />
+<h4>Rendered content:</h4>
+<h1>Heading h1</h1>
+<h3>Heading h3</h3>
+<ul>
+	<li>A list example with a list of examples</li>
+	<li><strong>Bold-faced text</strong></li>
+	<li><em>Italicized text</em></li>
+	<li><strong><em>Bold-faced and italicized text</em></strong></li>
+</ul>
+
+<br />
+<p>
+However, HTML usually only plays its role as the means to create the structure of web pages. CSS is the real tool to beautify the content of web pages, and a blog post is not an exception. As a result of separation-of-concerns principle, using HTML and CSS together will help separate the webpage content and its format. As a demo, let’s recreate the example above without the specialized tags, and the result is the below snippet.
+</p>
+
+<h4>Code snippet (HTML):</h4>
+<pre>
+&lt;div class="heading1"&gt;Heading h1&lt;/div&gt;
+&lt;div class="heading3"&gt;Heading h3&lt;/div&gt;
+&lt;ul&gt;
+	&lt;li&gt;A list example with a list of examples&lt;/li&gt;
+	&lt;li class="bold-text"&gt;Bold-faced text&lt;/li&gt;
+	&lt;li class="italicized-text"&gt;Italicized text&lt;/li&gt;
+	&lt;li class="bold-text italicized-text"&gt;Bold-faced and italicized text&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<br />
+<h4>Rendered content:</h4>
+<div class="heading1 center">Heading h1</div>
+<div class="heading3 right">Heading h3</div>
+<img class="image" src="m.jpg" alt="mickey" />
+<ul>
+	<li class="">A list example with a list of examples</li>
+	<li class="bold-text">Bold-faced text</li>
+	<li class="italicized-text">Italicized text</li>
+	<li class="bold-text italicized-text">Bold-faced and italicized text</li>
+</ul>
+
+<br />
+<p>
+The code above will have similar format to the code with specialized HTML tags. The difference is only the spacing, which can be adjust by CSS as well. Of course, it needs the CSS style rules, which is attached at the bottom of this writing.
+</p>
+
+<p>
+As the main tool to format web pages, CSS has evolved and become very powerful, and the example above is just an extremely modest example of its capability. Because HTML is mainly for the structure of the content, CSS can even override the default format of HTML tags and modify the format as desired by the designer. Below is a photo of the simple web page after the full effect of CSS style rules in this demo. The text part was demonstrated, but there are new effects as Heading h1 is center aligned and Heading h3 is right aligned. Also, the background is changed with the khaki color, and an image is added with some effect on it to round the corners and create a blue border.
+</p>
+
+<h4>Find or make consistent images and photos</h4>
+<p>
+The images that you use on your blog are so important - using the wrong style or type can have bad consequences for readership and, in some cases, even cause you legal issues if you use a photo that you're not supposed to.
+</p>
+
+<br />
+<p>
+Any blog posts can be beautified in infinitely many ways with CSS if we can master it. That is true for not only blog posts but for all web pages. That’s why CSS is a must for any front-end developers.
+</p>
+
+
+
+<h4>Code snippet (CSS styles):</h4>
+<pre>
+&lt;style&gt;
+	.heading1 {
+		font-size : 32px;
+		font-weight : bold;
+	}
+	.heading3 {
+		font-size : 19px;
+		font-weight : bold;
+	}
+	.bold-text {
+		font-weight : bold;
+	}
+	.italicized-text {
+		font-style : italic;
+	}
+	body {
+		background-color: khaki;
+	}
+	.center {
+		text-align: center;
+	}
+	.right {
+		text-align: right;
+	}
+	.image {
+		width : 200px;
+		height: 200px;
+		float: right;
+		border-radius: 15px;
+		border: solid 5px blue;
+	}
+&lt;/style&gt;
+</pre>
+
+
+
+<h4>Log:</h4>
+<pre>
+Gideon’s log
+TaskTime taken
+Looking up for materials on the internet		1 hr
+Preparing word document					1 hr
+Compling information from my colleague			30 min
+Total time2hrs 30min
+
+Danh’s log
+9/7/2021 5pm
+Research topic						25 mins
+Draft essay structure					10 mins
+Code HTML						20 mins
+Write essay						15 mins
+Reformat HTML file with CSS				20 mins
+Write essay						15 mins
+Code more HTML and CSS					30 mins
+Validate HTML file and finalize essay			5 mins
+
+9/8/2021 4:50pm
+Review Gideon’s modifications				10 mins
+
+9/10/2021 12:30am
+Change document to HTML and format			1 hour
+</pre>
+</body>
+</html>
